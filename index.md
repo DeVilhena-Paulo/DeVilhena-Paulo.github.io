@@ -1,8 +1,8 @@
-I'm a PhD student under the supervision of François Pottier.
-We are interested in devising methods for reasoning about computer programs with rigour:
-how to write a precise documentation of their behavior and how to prove that such specification is met.
+I'm a PhD student under the supervision of [François Pottier](http://gallium.inria.fr/~fpottier/).
+We are interested in devising methods for reasoning with rigout about computer programs:
+how to write a precise documentation of their behavior and how to prove that such specification is met.  
 In particular, we study programs that both manipulate the heap and alter the control flow through
-a recent and exciting programming construct, an *effect handler*.
+*effect handlers*, a new and exciting programming language construct.
 
 
 # Publications
