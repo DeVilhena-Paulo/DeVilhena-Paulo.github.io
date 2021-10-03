@@ -1,18 +1,18 @@
 I'm a PhD student under the supervision of François Pottier.  
 We are interested in devising methods for reasoning about computer programs with rigour:  
 how to write a precise documentation of their behavior and how to prove that such specification is met.  
-In particular, we study programs that both manipulate the heap and alter the control flow through a  
-recent and exciting programming construct, an *effect handler*.
+In particular, we study programs that both manipulate the heap and alter the control flow through  
+a recent and exciting programming construct, an *effect handler*.
 
 
 # Publications
 
-* **A Separation Logic for Effect Handlers** 
+* ***A Separation Logic for Effect Handler*s** (POPL 2021)  
   Paulo Emílio de Vilhena and François Pottier  
 
-* **Algebraically Closed Field in Isabelle/HOL**
+* ***Algebraically Closed Field in Isabelle/HOL*** (IJCAR 2020)  
   Paulo Emílio de Vilhena and Lawrence C. Paulson  
 
-* **Spy Game: Verifying a Local Generic Solver in Iris**  
+* ***Spy Game: Verifying a Local Generic Solver in Iris*** (POPL 2020)  
   Paulo Emílio de Vilhena, François Pottier and Jacques-Henri Jourdan  
   
