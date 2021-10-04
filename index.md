@@ -13,7 +13,7 @@ In particular, we study programs that both manipulate the heap and alter the con
   ([doi](https://doi.org/10.1145/3434314))
   ([talk](https://www.youtube.com/watch?v=Zqyu0LPbBb8&t=1222s))
 
-* ***Algebraically Closed Field in Isabelle/HOL*** (IJCAR 2020)  
+* ***Algebraically Closed Fields in Isabelle/HOL*** (IJCAR 2020)  
   Paulo Emílio de Vilhena and Lawrence C. Paulson  
   ([pdf](https://devilhena-paulo.github.io/files/algebraic-closure.pdf))
   ([doi](https://doi.org/10.1007/978-3-030-51054-1_12))
