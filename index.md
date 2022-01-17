@@ -7,7 +7,11 @@ In particular, we study programs that both manipulate the heap and alter the con
 
 # Publications
 
-* ***A Separation Logic for Effect Handler*s** (POPL 2021)  
+* ***Verifying a Minimalist Reverse-Mode AD Library*** (Submitted)  
+  Paulo Emílio de Vilhena and François Pottier  
+  ([pdf](https://devilhena-paulo.github.io/files/verifying-rmad.pdf))
+
+* ***A Separation Logic for Effect Handlers*** (POPL 2021)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf))
   ([doi](https://doi.org/10.1145/3434314))
