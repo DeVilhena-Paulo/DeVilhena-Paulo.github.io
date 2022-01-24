@@ -7,7 +7,7 @@ In particular, we study programs that both manipulate the heap and alter the con
 
 # Publications
 
-* ***Verifying a Minimalist Reverse-Mode AD Library*** (Submitted)  
+* ***Verifying a Minimalist Reverse-Mode AD Library*** (Submitted to LMCS)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/verifying-rmad.pdf))
 
@@ -24,7 +24,7 @@ In particular, we study programs that both manipulate the heap and alter the con
   ([talk](https://www.youtube.com/watch?v=jXmfoIDXtKk))
 
 * ***Spy Game: Verifying a Local Generic Solver in Iris*** (POPL 2020)  
-  Paulo Emílio de Vilhena, François Pottier and Jacques-Henri Jourdan  
+  Paulo Emílio de Vilhena, François Pottier, and Jacques-Henri Jourdan  
   ([pdf](https://devilhena-paulo.github.io/files/spy-game.pdf))
   ([doi](https://doi.org/10.1145/3371101))
   ([talk](https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s))
