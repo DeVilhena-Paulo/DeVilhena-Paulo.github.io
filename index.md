@@ -7,6 +7,10 @@ In particular, we study programs that both manipulate the heap and alter the con
 
 # Publications
 
+* ***A Type System for Effect Handlers and Dynamic Labels*** (Submitted)  
+  Paulo Emílio de Vilhena and François Pottier  
+  ([pdf](https://devilhena-paulo.github.io/files/tes.pdf))
+
 * ***Verifying a Minimalist Reverse-Mode AD Library*** (Submitted to LMCS)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/verifying-rmad.pdf))
