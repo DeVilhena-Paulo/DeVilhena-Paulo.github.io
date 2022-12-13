@@ -11,7 +11,7 @@ In particular, we study programs that both manipulate the heap and alter the con
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/tes.pdf))
 
-* ***Verifying a Minimalist Reverse-Mode AD Library*** (Submitted to LMCS)  
+* ***Verifying an Effect-Handler-Based Define-By-Run Reverse-Mode AD Library*** (Submitted to LMCS)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/verifying-rmad.pdf))
 
