@@ -1,13 +1,18 @@
-I'm a PhD student under the supervision of [François Pottier](http://gallium.inria.fr/~fpottier/).
-We are interested in devising methods for reasoning with rigour about computer programs:
-how to write a precise documentation of their behaviour and how to prove that such a specification is met.  
-In particular, we study programs that both manipulate the heap and alter the control flow through
-*effect handlers*, a new and exciting programming language construct.
+I am a postdoctoral researcher at Imperial College London working under the
+supervision of [Azalea Raad](https://www.soundandcomplete.org/) on the
+theoretical foundations of _persistent memory_.
+
+During my thesis, supervised by [François Pottier](https://gallium.inria.fr/~fpottier/),
+I devised extensions of
+[_Separation Logic_ with support for _effect handlers_](https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf),
+and I applied these logics to
+(1) the [verification of interesting programs](https://devilhena-paulo.github.io/files/verifying-rmad.pdf), and
+(2) the [proof of soundness of a novel type system](https://devilhena-paulo.github.io/files/tes.pdf).
 
 
 # Publications
 
-* ***A Type System for Effect Handlers and Dynamic Labels*** (Submitted)  
+* ***A Type System for Effect Handlers and Dynamic Labels*** (ESOP 2023)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/tes.pdf))
 
@@ -32,3 +37,10 @@ In particular, we study programs that both manipulate the heap and alter the con
   ([pdf](https://devilhena-paulo.github.io/files/spy-game.pdf))
   ([doi](https://doi.org/10.1145/3371101))
   ([talk](https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s))
+
+
+# Thesis
+
+* ***Proof of Programs with Effect Handlers***  
+  Paulo Emílio de Vilhena  
+  ([pdf](https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf))
