@@ -1,13 +1,8 @@
 I am a postdoctoral researcher at Imperial College London working under the
 supervision of [Azalea Raad](https://www.soundandcomplete.org/) on the
 theoretical foundations of _persistent memory_.
-
 During my thesis, supervised by [François Pottier](https://gallium.inria.fr/~fpottier/),
-I devised extensions of
-[_Separation Logic_ with support for _effect handlers_](https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf),
-and I applied these logics to
-(1) the [verification of interesting programs](https://devilhena-paulo.github.io/files/verifying-rmad.pdf), and
-(2) the [proof of soundness of a novel type system](https://devilhena-paulo.github.io/files/tes.pdf).
+I devised extensions of _Separation Logic_ with support for _effect handlers_.
 
 
 # Publications
@@ -38,9 +33,5 @@ and I applied these logics to
   ([doi](https://doi.org/10.1145/3371101))
   ([talk](https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s))
 
-
-# Thesis
-
-* ***Proof of Programs with Effect Handlers***  
-  Paulo Emílio de Vilhena  
+* ***Proof of Programs with Effect Handlers***  (PhD Thesis -- 2022)  
   ([pdf](https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf))
