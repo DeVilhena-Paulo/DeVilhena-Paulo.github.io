@@ -9,11 +9,15 @@ I devised extensions of _Separation Logic_ with support for _effect handlers_.
 
 * ***A Type System for Effect Handlers and Dynamic Labels*** (ESOP 2023)  
   Paulo Emílio de Vilhena and François Pottier  
+  _Nominated to one of the best paper awards_  
   ([pdf](https://devilhena-paulo.github.io/files/tes.pdf))
+  ([doi](https://doi.org/10.1007/978-3-031-30044-8_9))
+  ([slides](https://devilhena-paulo.github.io/files/tes-slides.pdf))
 
 * ***Verifying an Effect-Handler-Based Define-By-Run Reverse-Mode AD Library*** (Submitted to LMCS)  
   Paulo Emílio de Vilhena and François Pottier  
   ([pdf](https://devilhena-paulo.github.io/files/verifying-rmad.pdf))
+  ([arxiv](https://arxiv.org/abs/2112.07292))
 
 * ***A Separation Logic for Effect Handlers*** (POPL 2021)  
   Paulo Emílio de Vilhena and François Pottier  
@@ -34,4 +38,5 @@ I devised extensions of _Separation Logic_ with support for _effect handlers_.
   ([talk](https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s))
 
 * ***Proof of Programs with Effect Handlers***  (PhD Thesis -- 2022)  
+  _Recipient of the thesis award from the [GDR GPL](https://gdr-gpl.cnrs.fr/Actions/PrixDeTheseGPL)_  
   ([pdf](https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf))
