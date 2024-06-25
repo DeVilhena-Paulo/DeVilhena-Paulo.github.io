@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- Head. ---------------------------------------------------------------- -->
+
+<head>
+    <!-- Boilerplate. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google's merriweather font. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon. -->
+    <link rel="icon" type="image/x-icon" src="favicon.ico">
+
+    <title>Paulo de Vilhena</title>
+</head>
+<!-- ---------------------------------------------------------------------- -->
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- Body. ---------------------------------------------------------------- -->
+
+<body>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Top stripes. -->
+    <div id="top-stripes">
+        <div class="stripe" style="background-color: #5b6767"></div>
+        <div class="stripe" style="background-color: #9a99a4"></div>
+        <div class="stripe" style="background-color: #f6d579"></div>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Begin of content-wrapper. -->
+    <main>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Header. -->
+    <header class="container">
+        <h1>Paulo Emílio de Vilhena</h1>
+    </header>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - About me. -->
+    <section id="about-me" class="container">
+
+        <!-- Profile picture. -->
+        <div id="profile-picture">
+            <img width="175px" src="picture.png" alt="Profile Picture">
+        </div>
+
+        <!-- Greetings. -->
+        <h2>About me</h2>
+
+        <!-- Where I am. -->
+        <p>
+            <!-- Greetings. -->
+            Hi, welcome to my page!
+            I'm a postdoctoral researcher at
+            <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College
+                London</a>,
+            working as a member of
+            <a href="https://www.soundandcomplete.org/" target="_blank" rel="noopener noreferrer">Azalea
+                Raad</a>'s
+            research group
+            <a href="https://www.soundandcomplete.org/veritas.html" target="_blank"
+                rel="noopener noreferrer">Veritas</a>.
+        </p>
+
+        <!-- Where I was. -->
+        <p>
+            I did my PhD at
+            <a href="https://www.inria.fr/en/inria-paris-centre" target="_blank" rel="noopener noreferrer">Inria Paris</a>,
+            in the
+            <a href="https://cambium.inria.fr/" target="_blank" rel="noopener noreferrer">CAMBIUM</a>
+            research team,
+            under the supervision of
+            <a href="https://pauillac.inria.fr/~fpottier/" target="_blank" rel="noopener noreferrer">François Pottier</a>.
+            The main contribution of my thesis is the extension of Separation Logic with
+            support for
+            <a href="https://ocaml.org/manual/5.2/effects.html" target="_blank" rel="noopener noreferrer">
+            effect handlers</a>,
+            an advanced control-flow mechanism that
+            was recently added to
+            <a href="https://ocaml.org/" target="_blank" rel="noopener noreferrer">OCaml</a>
+            (coincidentally, in the same day as my thesis defense!).
+        </p>
+
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - Publications -->
+    <section id="publications" style="background:#f6d57920">
+        <div class="container vertical-spacing" style="padding-bottom:5px">
+        <h2 style="padding-top:15px">Publications</h2>
+        <ul>
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    Verifying an Effect-Handler-Based
+                    Define-By-Run Reverse-Mode AD Library
+                </span>
+                <br>
+                Logical Methods in Computer Science
+                (LMCS), October 2023
+                <br>
+                Paulo Emílio de Vilhena and
+                François Pottier
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/files/verifying-rmad.pdf" target="_blank"
+                    rel="noopener noreferrer">pdf</a>
+                | <a href="https://doi.org/10.46298/lmcs-19(4:5)2023" target="_blank" rel="noopener noreferrer">doi</a>
+                | <a href="https://arxiv.org/abs/2112.07292" target="_blank" rel="noopener noreferrer">arxiv</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    A Type System for Effect Handlers and Dynamic Labels
+                </span>
+                <br>
+                European Symposium on Programming (ESOP), April 2023
+                <br>
+                Paulo Emílio de Vilhena and
+                François Pottier
+                <br>
+                <span class="nomination">
+                    Nominated to one of the best-paper awards
+                </span>
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/files/verifying-tes.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+                | <a href="https://doi.org/10.1007/978-3-031-30044-8_9" target="_blank" rel="noopener noreferrer">doi</a>
+                | <a href="https://devilhena-paulo.github.io/files/tes-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    A Separation Logic for Effect Handlers
+                </span>
+                <br>
+                Principles of Programming Languages (POPL), January 2021
+                <br>
+                Paulo Emílio de Vilhena and
+                François Pottier
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+                | <a href="https://doi.org/10.1145/3434314" target="_blank" rel="noopener noreferrer">doi</a>
+                | <a href="https://www.youtube.com/watch?v=Zqyu0LPbBb8&t=1222s" target="_blank" rel="noopener noreferrer">talk</a>
+                | <a href="https://docs.google.com/presentation/d/1dA336cxodoCOQbetb51TmprlB4cgBhNV4ygTkuA3sfk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">slides</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    Algebraically Closed Fields in Isabelle/HOL
+                </span>
+                <br>
+                International Joint Conference on Automated Reasoning (IJCAR), June 2020
+                <br>
+                Paulo Emílio de Vilhena and
+                Lawrence C. Paulson
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/files/algebraic-closure.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+                | <a href="https://doi.org/10.1007/978-3-030-51054-1_12" target="_blank" rel="noopener noreferrer">doi</a>
+                | <a href="https://www.youtube.com/watch?v=jXmfoIDXtKk" target="_blank" rel="noopener noreferrer">talk</a>
+                | <a href="https://docs.google.com/presentation/d/1epnPVy-mpBFei-bco2loRPcU7WhSmkcbxqUFj2tHf2Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">slides</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    Spy Game: Verifying a Local Generic Solver in Iris
+                </span>
+                <br>
+                Principles of Programming Languages (POPL), January 2020
+                <br>
+                Paulo Emílio de Vilhena,
+                François Pottier, and
+                Jacques-Henri Jourdan
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/files/spy-game.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+                | <a href="https://doi.org/10.1145/3371101" target="_blank" rel="noopener noreferrer">doi</a>
+                | <a href="https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s" target="_blank" rel="noopener noreferrer">talk</a>
+                | <a href="https://devilhena-paulo.github.io/files/spy-game-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+        </ul>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - PhD Thesis -->
+    <section id="phd-thesis" class="container vertical-spacing">
+        <h2>PhD Thesis</h2>
+        <ul>
+            <!-- ---------------------------------------------------------- -->
+            <li class="publication">
+                <span class="publication-title">
+                    Proof of Programs with Effect Handlers
+                </span>
+                <br>
+                Université Paris Cité, December 2022
+                <br>
+                <span class="award">
+                    Recipient of the thesis award from the
+                    <a href="https://gdr-gpl.cnrs.fr/Actions/PrixDeTheseGPL" target="_blank"
+                        rel="noopener noreferrer">GDR GPL</a>
+                </span>
+                <br>
+                [ <a href="https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+                | <a href="https://docs.google.com/presentation/d/1MQS9SQGg8Hb_6ffbamKi1FFaVbE1mQ_9nS4duDa_yuE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">slides</a> ]
+            </li>
+            <!-- ---------------------------------------------------------- -->
+        </ul>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    </main>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Footer. -->
+    <footer>
+        <div class="container">
+            <img id="noel-20" width="125px" src="noel-20.png" alt="Paulo">
+        </div>
+    </footer>
+    <!-- ------------------------------------------------------------------ -->
+
+</body>
+<!-- ---------------------------------------------------------------------- -->
+
+</html>

@@ -1,0 +1,213 @@
+/* ------------------------------------------------------------------------- */
+/* -- Font style, size, and color. ----------------------------------------- */
+
+/* Show selection as white text upon an yellow background. */
+::selection {
+    background-color: #f6d579;
+    color: #ffffff;
+}
+
+/* Set default font style, and color. */
+* {
+    color: black;
+    font-family: "Merriweather", "Verdana", serif;
+}
+
+/* Default font size. */
+html {
+    background-color: #ffffff;
+    font-size: 1.1em;
+}
+
+/* Font size of h* elements. */
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+/* Styling of publication title. */
+span.publication-title {
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Highlight nominations and awards. */
+span.nomination,
+span.award {
+    color: #e8ba3a;
+    font-style:italic
+}
+
+/* Adjust font size to screen size. */
+@media only screen and (max-width: 770px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Margin, and padding.  ------------------------------------------------ */
+
+header {
+    /* Add bottom border to header. */
+    border-bottom: /*line-width:*/ 2px /*line-style:*/ solid /*color:*/ #9a99a4;
+}
+
+/* Margin of h1 element in the header. */
+header > h1 {
+    margin: /*top:*/.75em /*right:*/0 /*bottom:*/.5em /*left:*/0;
+}
+
+/* No space between an h2 element and the following text. */
+h2 {
+    margin-block-end: 0;
+}
+
+/* Body element occupies the entire page. */
+body {
+    margin: /*top:*/0 /*right:*/0 /*bottom:*/0 /*left:*/0;
+    padding: /*top:*/0 /*right:*/0 /*bottom:*/0 /*left:*/0;
+
+    /* Setting required to make footer stick to the bottom. */
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Create space for the bottom stripes. */
+main {
+    padding-bottom: 120px;
+}
+
+/* Class to add left and right margins. */
+.container {
+    width: 767px;
+    margin: /*top:*/0 /*right:*/auto  /*bottom:*/0 /*left:*/auto;
+    padding: /*top:*/0 /*Right:*/0  /*bottom:*/0 /*left:*/0;
+}
+
+/* Class to add vertical spacing (usually to a container). */
+.vertical-spacing {
+    margin-top: 30px;
+}
+
+/* Spacing between publication entries. */
+li.publication {
+    margin-bottom: 20px;
+}
+
+/* Adjust margin and width according to screen size. */
+@media only screen and (max-width: 770px) {
+    /* Set variable width. */
+    .container {
+        width: 94%;
+    }
+    /* Make profile picture smaller. */
+    #profile-picture > img {
+        width: 150px;
+        margin-top: 4px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Links. --------------------------------------------------------------- */
+
+/* Basic appearance (visited or not). */
+a:link,
+a:visited {
+    color: #e8ba3a;
+    text-decoration: none;
+}
+
+/* Underline link when hovering over it. */
+a:hover {
+    color: #e8ba3a;
+    text-decoration: underline #e8ba3a;
+    text-decoration-thickness: 2px;
+}
+
+/* Remove underline upon click. */
+a:active {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Classes. ------------------------------------------------------------- */
+
+/* Stripes extend horizontally over the entire page. */
+.stripe {
+    width: 100%;
+    height: 8px;
+}
+
+.rule {
+    width: 100%;
+    height: 16px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Profile picture. ----------------------------------------------------- */
+
+/* Position and margin. */
+#profile-picture {
+    float: left;
+    padding: /*top:*/5px /*right:*/25px /*bottom:*/0px /*left:*/4px;
+}
+
+/* Rounded corners and border.*/
+#profile-picture > img {
+    border-radius: 10px;
+    border: /*line-width:*/0px /*line-style:*/solid /*color:*/#5b6767;
+    box-shadow:
+        /*offset-x*/0px
+        /*offset-y*/0px
+        /*shadow-radius:*/6px
+        /*spread-radius:*/-1px
+        /*color:*/#5b6767;
+}
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Noël. ---------------------------------------------------------------- */
+
+/* Position and margin.*/
+img#noel-20 {
+    float: right;
+    padding-top: 10px;
+    transform: rotate(8deg);
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Footer. -------------------------------------------------------------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #f6d579;
+ }
+ /* ------------------------------------------------------------------------- */
