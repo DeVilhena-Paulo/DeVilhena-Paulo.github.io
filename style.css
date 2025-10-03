@@ -90,7 +90,7 @@ body {
 
 /* Create space for the bottom stripes. */
 main {
-    padding-bottom: 120px;
+    padding-bottom: 130px;
 }
 
 /* Class to add left and right margins. */
@@ -197,8 +197,19 @@ a:active {
 /* Position and margin.*/
 img#noel-20 {
     float: right;
-    padding-top: 10px;
-    transform: rotate(8deg);
+    transform: translateY(20%) rotate(8deg);
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Kaeru. --------------------------------------------------------------- */
+
+/* Position and margin.*/
+img#kaeru-25 {
+    float: left;
+    transform: translateY(-33%) rotate(-12deg);
 }
 
 /* ------------------------------------------------------------------------- */
@@ -214,4 +225,5 @@ footer {
     height: 85px;
     background-color: #f6d579;
  }
- /* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
