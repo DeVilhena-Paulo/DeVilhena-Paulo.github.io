@@ -40,6 +40,10 @@ span.publication-title {
 }
 
 /* Highlight nominations and awards. */
+span.highlight {
+    color: #e8ba3a;
+}
+
 span.nomination,
 span.award {
     color: #e8ba3a;
