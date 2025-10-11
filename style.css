@@ -39,6 +39,15 @@ span.publication-title {
     font-weight: bold;
 }
 
+/* Contour of publication box. */
+div.publication {
+    background-color: #ffffff;
+    border: 0.9px solid #e8ba3a;
+    border-left: 2px solid #e8ba3a;
+    border-bottom: 3px solid #e8ba3a;
+    border-radius: 5px;
+}
+
 /* Highlight nominations and awards. */
 span.highlight {
     color: #e8ba3a;
@@ -100,7 +109,7 @@ main {
 .container {
     width: 767px;
     margin: /*top:*/0 /*right:*/auto  /*bottom:*/0 /*left:*/auto;
-    padding: /*top:*/0 /*Right:*/0  /*bottom:*/0 /*left:*/0;
+    padding: /*top:*/0 /*right:*/0  /*bottom:*/0 /*left:*/0;
 }
 
 /* Class to add vertical spacing (usually to a container). */
@@ -108,9 +117,10 @@ main {
     margin-top: 30px;
 }
 
-/* Spacing between publication entries. */
-li.publication {
-    margin-bottom: 20px;
+/* Spacing withing publication box. */
+div.publication {
+    margin-top: 10px;
+    padding: /*top:*/6px /*right:*/6px /*bottom:*/6px /*left:*/10px;
 }
 
 /* Adjust margin and width according to screen size. */
