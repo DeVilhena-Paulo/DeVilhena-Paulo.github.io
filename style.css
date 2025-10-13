@@ -15,7 +15,7 @@
 
 /* Default font size. */
 html {
-    background-color: #ffffff;
+    background-color:#f6d57920;
     font-size: 1.1em;
 }
 
@@ -42,9 +42,9 @@ span.publication-title {
 /* Contour of publication box. */
 div.publication {
     background-color: #ffffff;
-    border: 0.9px solid #e8ba3a;
-    border-left: 2px solid #e8ba3a;
-    border-bottom: 3px solid #e8ba3a;
+    border: 1px solid black;
+    border-left: 2px solid black;
+    border-bottom: 3px solid black;
     border-radius: 5px;
 }
 
@@ -57,6 +57,11 @@ span.nomination,
 span.award {
     color: #e8ba3a;
     font-style:italic
+}
+
+span.abstract-btn {
+    color: #e8ba3a;
+    cursor: pointer;
 }
 
 /* Adjust font size to screen size. */
@@ -74,13 +79,25 @@ span.award {
 
 header {
     /* Add bottom border to header. */
-    border-bottom: /*line-width:*/ 2px /*line-style:*/ solid /*color:*/ #9a99a4;
+    margin-top: 15px;
+
+    /*border-radius: 0px 0px 5px 5px;*/
 }
 
 /* Margin of h1 element in the header. */
-header > h1 {
-    margin: /*top:*/.75em /*right:*/0 /*bottom:*/.5em /*left:*/0;
+header > div {
+    margin: /*top:*/0em /*right:*/0 /*bottom:*/.5em /*left:*/0;
+    padding-top: .5em;
+    border: /*line-width:*/ 1px /*line-style:*/ solid /*color:*/ black;
+    border-bottom: /*line-width:*/ 3px /*line-style:*/ solid /*color:*/ black;
+    border-left: /*line-width:*/ 2px /*line-style:*/ solid /*color:*/ black;
+    border-radius: 4px;
+    background-color: white;
 }
+h1#title {
+    margin: /*top:*/.25em /*right:*/0 /*bottom:*/.25em /*left:*/.25em;
+}
+
 
 /* No space between an h2 element and the following text. */
 h2 {
@@ -120,7 +137,7 @@ main {
 /* Spacing withing publication box. */
 div.publication {
     margin-top: 10px;
-    padding: /*top:*/6px /*right:*/6px /*bottom:*/6px /*left:*/10px;
+    padding: /*top:*/6px /*right:*/8px /*bottom:*/6px /*left:*/8px;
 }
 
 /* Adjust margin and width according to screen size. */
@@ -150,7 +167,8 @@ a:visited {
 }
 
 /* Underline link when hovering over it. */
-a:hover {
+a:hover,
+span.abstract-btn:hover {
     color: #e8ba3a;
     text-decoration: underline #e8ba3a;
     text-decoration-thickness: 2px;
@@ -165,7 +183,7 @@ a:active {
 
 
 /* ------------------------------------------------------------------------- */
-/* -- Classes. ------------------------------------------------------------- */
+/* -- Stripes. ------------------------------------------------------------- */
 
 /* Stripes extend horizontally over the entire page. */
 .stripe {
@@ -173,9 +191,38 @@ a:active {
     height: 8px;
 }
 
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Rules. --------------------------------------------------------------- */
+
 .rule {
     width: 100%;
     height: 16px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -- Abstract. ------------------------------------------------------------ */
+
+.abstract {
+    display: none;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: #fefefe;
+    border-radius: 3px;
+    font-style: italic;
+    font-size: .8em;
+    color: #000000;
+    text-align: justify;
+}
+
+.abstract.show {
+    display: block;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -205,37 +252,89 @@ a:active {
 
 
 /* ------------------------------------------------------------------------- */
-/* -- Noël. ---------------------------------------------------------------- */
-
-/* Position and margin.*/
-img#noel-20 {
-    float: right;
-    transform: translateY(20%) rotate(8deg);
-}
-
-/* ------------------------------------------------------------------------- */
-
-
-/* ------------------------------------------------------------------------- */
-/* -- Kaeru. --------------------------------------------------------------- */
-
-/* Position and margin.*/
-img#kaeru-25 {
-    float: left;
-    transform: translateY(-35%) rotate(-12deg);
-}
-
-/* ------------------------------------------------------------------------- */
-
-
-/* ------------------------------------------------------------------------- */
 /* -- Footer. -------------------------------------------------------------- */
 
 footer {
-    bottom: 0;
-    width: 100%;
-    height: 85px;
-    background-color: #f6d579;
- }
+    background: #f5f5f5;
+    padding: 2rem 1rem;
+    border-top: 2px solid black;
+    height: 70px;
+}
 
-/* ------------------------------------------------------------------------- */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Kaeru. */
+img#kaeru {
+    height: 125px;
+    width: auto;
+    transform: rotate(-8deg);
+}
+
+/* Paulo (Noël). */
+img#paulo {
+    height: 70px;
+    width: auto;
+    transform: rotate(8deg);
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-icons svg {
+    width: 40px;
+    height: auto;
+    fill: black;
+    cursor: pointer;
+    transition: fill 0.3s, transform 0.3s;
+}
+
+.social-icons svg:hover {
+  fill: #e8ba3a;
+  transform: scale(1.1);
+}
+
+/* Change arrangement of icons depending screen size. */
+@media only screen and (max-width: 770px) {
+    footer {
+        height: auto;
+        padding: /*top:*/2rem /*right:*/0  /*bottom:*/0 /*left:*/0;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+        max-width: 100%;
+        padding: /*top:*/0 /*right:*/1rem  /*bottom:*/0 /*left:*/0;
+    }
+
+    img#kaeru {
+        transform: translateY(-10%) rotate(-8deg);
+    }
+
+    .social-icons {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+
+    .footer-left {
+        justify-self: start;
+        padding-left: 0;
+    }
+
+    .footer-right {
+        justify-self: end;
+        padding-right: 0;
+    }
+}

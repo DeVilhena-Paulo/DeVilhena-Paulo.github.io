@@ -19,6 +19,9 @@
     <!-- CSS Stylesheet. -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- JS Script. -->
+    <script src="script.js"></script>
+
     <!-- Favicon. -->
     <link rel="icon" type="image/x-icon" src="favicon.ico">
 
@@ -34,10 +37,8 @@
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Top stripes. -->
-    <div id="top-stripes">
-        <div class="stripe" style="background-color: #5b6767"></div>
-        <div class="stripe" style="background-color: #9a99a4"></div>
-        <div class="stripe" style="background-color: #f6d579"></div>
+    <div id="top-stripes" style="border-bottom:2px solid black;">
+        <div class="stripe" style="background-color: #f6d579; height:32px"></div>
     </div>
     <!-- ------------------------------------------------------------------ -->
 
@@ -48,8 +49,10 @@
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Header. -->
-    <header class="container">
-        <h1>Paulo Emílio de Vilhena</h1>
+    <header>
+        <div class="container">
+        <h1 id="title">Paulo Emílio de Vilhena</h1>
+        </div>
     </header>
     <!-- ------------------------------------------------------------------ -->
 
@@ -59,7 +62,7 @@
 
         <!-- Profile picture. -->
         <div id="profile-picture">
-            <img width="175px" src="img/picture.png" alt="Profile Picture">
+            <img width="275px" src="img/picture.png" alt="Profile Picture">
         </div>
 
         <!-- Greetings. -->
@@ -70,13 +73,13 @@
             <!-- Greetings. -->
             Hi, welcome to my page!
             I'm a postdoctoral researcher at
-            <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College
+            <a href="https://www.imperial.ac.uk/" aria-label="Imperial" target="_blank" rel="noopener noreferrer">Imperial College
                 London</a>,
             working as a member of
-            <a href="https://www.soundandcomplete.org/" target="_blank" rel="noopener noreferrer">Azalea
+            <a href="https://www.soundandcomplete.org/" aria-label="Azalea" target="_blank" rel="noopener noreferrer">Azalea
                 Raad</a>'s
-            research group
-            <a href="https://www.soundandcomplete.org/veritas.html" target="_blank"
+            research group,
+            <a href="https://www.soundandcomplete.org/veritas.html" aria-label="Veritas group" target="_blank"
                 rel="noopener noreferrer">Veritas</a>.
         </p>
 
@@ -104,7 +107,7 @@
 
     <!-- ------------------------------------------------------------------ -->
     <!-- Section - Publications -->
-    <section id="publications" style="background:#f6d57920">
+    <section id="publications"> <!-- style="background:#f6d57920"> -->
         <div class="container vertical-spacing" style="padding-bottom:20px">
         <h2 style="padding-top:15px">Publications</h2>
 
@@ -125,6 +128,37 @@
             [ <a href="https://devilhena-paulo.github.io/files/blaze.pdf" target="_blank"
                 rel="noopener noreferrer">draft</a>
             ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                Effect handlers offer a powerful and relatively simple mechanism
+                for controlling a program's flow of execution. Since their introduction, an
+                impressive array of verification tools for effect handlers has been
+                developed. However, to this day, no framework can express and prove
+                <strong>relational properties</strong> about programs that use effect handlers
+                in languages such as OCaml and Links, where programming features like mutable
+                state and concurrency are readily available. To this end, we introduce
+                <strong>blaze</strong>, the first <strong>relational separation logic</strong>
+                for effect handlers. We build blaze on top of the Rocq implementation of the
+                Iris separation logic, thereby enjoying the rigour of a mechanised theory
+                and all the reasoning properties of a modern fully-fledged concurrent
+                separation logic, such as modular reasoning about stateful concurrent
+                programs and the ability to introduce user-defined ghost state. In addition
+                to familiar reasoning rules, such as the bind rule and the frame rule, blaze
+                offers rules to reason modularly about programs that perform and handle effects.
+                Significantly, when verifying that two programs are related, blaze
+                <strong>does not</strong> require that effects and handlers from one program be
+                in correspondence with effects and handlers from the other. To assess this
+                flexibility, we conduct a number of case studies: most noticeably,
+                we show how different implementations of an asynchronous
+                programming library using effects are related to
+                <strong>truly-concurrent</strong> implementations. As side contributions,
+                we introduce two new, simple, and general reasoning rules for concurrent
+                relational separation logic that are independent of effects:
+                a <strong>logical-fork rule</strong> that allows one to reason
+                about an arbitrary program phrase as if it had been spawned
+                as a thread and a <strong>thread-swap rule</strong> that allows
+                one to reason about how threads are scheduled.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -146,6 +180,26 @@
                 rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.1145/3689749" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://devilhena-paulo.github.io/files/inline-x86-asm-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                Programs written in C/C++ often include <strong>inline assembly</strong>:
+                a snippet of architecture-specific assembly code used to
+                access low-level functionalities that are impossible or
+                expensive to simulate in the source language. Although inline
+                assembly is widely used, its semantics has not yet been formally
+                studied.
+            <br>
+                In this paper, we overcome this deficiency by investigating the
+                effect of inline assembly on the <strong>consistency semantics</strong> of C/C++
+                programs. We propose the first memory model of the C++ Programming
+                Language with support for inline assembly for Intel's x86 including
+                <strong>non-temporal stores</strong> and
+		<strong>store fences</strong>.
+		We argue that previous
+                provably correct compiler optimizations and correct compiler
+                mappings should remain correct under such an extended model and
+                we prove that this requirement is met by our proposed model.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -166,6 +220,28 @@
                 rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.46298/lmcs-19(4:5)2023" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://arxiv.org/abs/2112.07292" target="_blank" rel="noopener noreferrer">arxiv</a> ]
+
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+	        We apply program verification technology to the problem of
+	        specifying and verifying automatic differentiation (AD)
+                algorithms. We focus on define-by-run, a style of AD where
+                the program that must be differentiated is executed and monitored
+                by the automatic differentiation algorithm. We begin by asking,
+                <strong>"what is an implementation of AD?"</strong> and
+                <strong>"what does it mean for an implementation of AD to be correct?"</strong>
+                We answer these questions both at an informal level,
+                in precise English prose, and at a formal level, using types
+                and logical assertions. After answering these broad questions, we focus on a
+                specific implementation of AD, which involves a number of subtle
+                programming-language features, including dynamically allocated mutable state,
+                first-class functions, and effect handlers. We present a machine-checked proof,
+                expressed in a modern variant of Separation Logic, of its correctness. We view
+                this result as an advanced exercise in program verification, with potential
+                future applications to the verification of more realistic automatic
+                differentiation systems and of other software components that exploit
+                delimited-control effects.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -187,6 +263,23 @@
             [ <a href="https://devilhena-paulo.github.io/files/tes.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.1007/978-3-031-30044-8_9" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://devilhena-paulo.github.io/files/tes-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                We consider a simple yet expressive &lambda;-calculus equipped with references,
+                effect handlers, and dynamic allocation of effect labels, and
+                whose operational semantics does not involve coercions or rely on type
+                information. We equip this language with a type system that supports type and
+                effect polymorphism, allows reordering row entries and extending a row with
+                new entries, and supports (but is not restricted to) lexically scoped
+                handlers. This requires addressing the issue of potential aliasing between
+                effect names. Our original solution is to interpret a row not only as a
+                permission to perform certain effects but also as a
+                disjointness requirement bearing on effect names. The type system guarantees
+                strong type soundness: a well-typed program cannot crash or perform an unhandled
+                effect. We prove this fact by encoding the type system into a novel Separation
+                Logic for effect handlers, which we build on top of Iris. Our results are
+                formalized in Coq.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -208,6 +301,33 @@
             <br>
             [ <a href="https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
             | <a href="https://devilhena-paulo.github.io/files/phd-defense-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">short abstract</span> ]
+            <div class="abstract">
+                This thesis addresses the problem of reasoning about programs that
+                modify the heap and alter the control flow through effect handlers,
+                a novel programming construct that provides a relatively simple interface to
+                delimited control. This ability to manipulate the control flow is extremely
+                powerful: many programming features &mdash;
+                such as asynchronous programming and coroutines &mdash; that come as
+                built-in packages of traditional programming languages can be expressed in
+                terms of effect handlers.
+             <br>
+                The status of effect handlers as a modular and expressive programming
+                construct is attested by the development of the OCaml programming
+                language, which will have support for handlers in its next major release.
+             <br>
+                This event makes the problem of unveiling the logical principles that govern
+                effect handlers even more pressing. In particular, how to reason abstractly
+                about a continuation, rather than thinking concretely as a fragment of the
+                stack? Moreover, can we reason separately about a program that performs
+                effects and a program that handles these effects? This thesis answers these
+                questions by introducing Hazel, a separation logic for effect handlers, built as an
+                extension of Iris. Hazel introduces a novel specification language by means
+                of which one can describe the behavior of programs, including continuations.
+                The logic allows one to compose specifications in a modular fashion through
+                familiar reasoning rules, such as the bind rule and the frame rule, and novel
+                ones, such as the reasoning rules for handling and performing effects.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -226,6 +346,29 @@
             | <a href="https://doi.org/10.1145/3434314" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://www.youtube.com/watch?v=Zqyu0LPbBb8&t=1222s" target="_blank" rel="noopener noreferrer">talk</a>
             | <a href="https://docs.google.com/presentation/d/1dA336cxodoCOQbetb51TmprlB4cgBhNV4ygTkuA3sfk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                User-defined effects and effect handlers are advertised and advocated as a
+                relatively easy-to-understand and modular approach to delimited control. They
+                offer the ability of suspending and resuming a computation and allow
+                information to be transmitted both ways between the computation, which
+                requests a certain service, and the handler, which provides this service. Yet,
+                a key question remains, to this day, largely unanswered: how does one
+                modularly specify and verify programs in the presence of both user-defined
+                effect handlers and primitive effects, such as heap-allocated mutable state?
+                We answer this question by presenting a Separation Logic with built-in support
+                for effect handlers, both shallow and deep. The specification of a program
+                fragment includes a protocol that describes the effects that the program may
+                perform as well as the replies that it can expect to receive. The logic allows
+                local reasoning via a frame rule and a bind rule. It is based on Iris and
+                inherits all of its advanced features, including support for higher-order
+                functions, user-defined ghost state, and invariants. We illustrate its power
+                via several case studies, including (1) a generic formulation of control
+                inversion, which turns a producer that "pushes" elements towards a consumer
+                into a producer from which one can "pull" elements on demand, and (2) a simple
+                system for cooperative concurrency, where several threads execute
+                concurrently, can spawn new threads, and communicate via promises.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -244,6 +387,17 @@
             | <a href="https://doi.org/10.1007/978-3-030-51054-1_12" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://www.youtube.com/watch?v=jXmfoIDXtKk" target="_blank" rel="noopener noreferrer">talk</a>
             | <a href="https://docs.google.com/presentation/d/1epnPVy-mpBFei-bco2loRPcU7WhSmkcbxqUFj2tHf2Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                That any field admits an algebraically closed extension
+                is a fundamental theorem in modern mathematics.
+                Despite its central importance,
+                we believe that the result has never been formalised in a proof assistant.
+                Here, we fill this gap by documenting the accomplishment of its formalisation in Isabelle/HOL.
+                As auxiliary contributions,
+                we elaborate on the difficulties that impeded this development
+                and the solutions that we found.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -263,6 +417,22 @@
             | <a href="https://doi.org/10.1145/3371101" target="_blank" rel="noopener noreferrer">doi</a>
             | <a href="https://www.youtube.com/watch?v=_6w18S3Opd4&t=555s" target="_blank" rel="noopener noreferrer">talk</a>
             | <a href="https://devilhena-paulo.github.io/files/spy-game-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a> ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+                We verify the partial correctness of a <strong>local generic solver</strong>, that is, an
+                on-demand, incremental, memoizing least fixed point computation algorithm.
+                The verification is carried out in Iris,
+                a modern breed of concurrent separation logic.
+                The specification is simple: the solver computes the optimal least
+                fixed point of a system of monotone equations. Although the solver relies on
+                mutable internal state for memoization and for <strong>spying</strong>, a form of dynamic
+                dependency discovery, it is apparently pure: no side effects are mentioned in
+                its specification.
+                As auxiliary contributions, we provide several illustrations of the use of
+                prophecy variables, a novel feature of Iris; we establish a restricted form of
+                the infinitary conjunction rule; and we provide a specification and proof of
+                Longley's <strong>modulus</strong> function, an archetypical example of spying.
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -276,11 +446,42 @@
     <!-- ------------------------------------------------------------------ -->
     <!-- Footer. -->
     <footer>
-        <div class="container">
-            <img id="noel-20" width="125px" src="img/noel-20.png" alt="Paulo">
-            <img id="kaeru-25" width="100px" src="img/kaeru-25.png" alt="Return">
-        </div>
-    </footer>
+    <div class="footer-content container">
+      <!-- Kaeru -->
+      <div class="footer-left">
+        <img id="kaeru" src="img/kaeru-25.png" alt="Kaeru">
+      </div>
+      
+      <!-- Centered social icons -->
+      <div class="social-icons">
+        <!-- GitHub -->
+        <a href="https://github.com/DeVilhena-Paulo" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" width="64" height="64" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+        </a>
+        
+        <!-- Mastodon -->
+        <a href="https://mathstodon.xyz/@paulo" aria-label="Mastodon" target="_blank" rel="noopener noreferrer">
+            <svg width="64" height="64" fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
+              <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a4 4 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522q0-1.288.66-2.046c.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764q.662.757.661 2.046z"/>
+            </svg>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/devilhena/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+            </svg>
+        </a>
+      </div>
+      
+      <!-- Paulo -->
+      <div class="footer-right">
+        <img id="paulo" src="img/noel-20.png" alt="Paulo">
+      </div>
+    </div>
+  </footer>
     <!-- ------------------------------------------------------------------ -->
 
 </body>
