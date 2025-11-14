@@ -114,6 +114,45 @@
         <!-- -------------------------------------------------------------- -->
         <div class="publication">
             <span class="publication-title">
+                Backwards-Compatible Row-Based Exceptions in ML
+            </span>
+            <br>
+            Undergoing peer review
+            <br>
+            Simcha Van Collem,
+            Paulo Emílio de Vilhena, and
+            Robbert Krebbers
+            <br>
+            [ <a href="https://devilhena-paulo.github.io/files/exceptional.pdf" target="_blank"
+                rel="noopener noreferrer">pdf</a>
+            ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+              We introduce a type system that provides strong types for exception
+              tracking in languages in the ML family.
+              Our type system employs a rich notion of row polymorphism and subtyping
+              to ensure backwards compatibility, making sure that code without exception
+              tracking remains to work and can be generalized gracefully to support
+              exception tracking.
+              We study the safety and abstraction guarantees of our type system,
+              in particular the role of local exceptions for data abstraction.
+              We formulate these claims using binary logical relations in a novel
+              relational separation logic for exceptions, an independent contribution of
+              this paper.
+              We support a realistic subset of features from ML, such as extensible
+              variant types and local exceptions, both of which are not supported by prior
+              type systems and logics with exception tracking.
+              We exercise our type system and logic on a number of challenging examples
+              taken from the OCaml standard library, from one of Jane Street's OCaml libraries,
+              and from Filinksi's PhD thesis.
+              All our results are mechanized in the Rocq prover using Iris.
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
+
+        <!-- -------------------------------------------------------------- -->
+        <div class="publication">
+            <span class="publication-title">
                 A Relational Separation Logic for Effect Handlers
             </span>
             <br>
