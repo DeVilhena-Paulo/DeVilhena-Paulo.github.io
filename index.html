@@ -514,8 +514,7 @@
         <h2>Service</h2>
 
         <p>
-            I've been invited to apply my expertise to review papers
-            for the following conferences.
+            I've been invited to review papers for the following conferences.
         </p>
         <ul>
             <li>
@@ -566,15 +565,13 @@
         <ul>
             <li>
                 <strong>Office:</strong>
-                <span id="office"></span>
-                <script>document.getElementById('office').textContent = office;</script>
-                [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, office)">copy</span> ]
+                <span id="office" class="eml"></span>
+                [ <span class="abstract-btn copy-btn" data-copy-type="office">copy</span> ]
             </li>
             <li>
                 <strong>Email:</strong>
                 <span id="email" class="eml"></span>
-                <script>document.getElementById('email').textContent = reveal(email);</script>
-                [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, reveal(email).split('').reverse().join(''))">copy</span> ]
+                [ <span class="abstract-btn copy-btn" data-copy-type="email">copy</span> ]
             </li>
         </ul>
         </div>

@@ -1,14 +1,18 @@
-const office = "180 Queen's Gate, South Kensington, London SW7 2AZ";
-const email = ['k', 'uu', 'cak', 'lai', 're', 'pmisan', 'ehli', 'vaedep'];
+const data = {
+    'office': ['ZA', '2 7', 'WS no', 'd', 'noL ,', 'not', 'gnisn', 'eK', ' ht', 'uo', 'S ,e', 'taG s\'n', 'e', 'euQ', ' 0', '81'],
+    'email': ['k', 'uu', 'cak', 'lai', 're', 'pmisan', 'ehli', 'vaedep'],
+};
 
-function reveal(xs) {
-    xs = xs.join('').split('');
-    xs[2] = '.';
-    xs[5] = '.';
-    xs[14] = '@';
-    xs[22] = '-';
-    xs[25] = '.';
-    return xs.join('');
+function repair(key) {
+    var result = data[key].join('');
+    if (key === 'office') {
+	return result;
+    } else {
+        result = result.split('');
+        result[2] = '.'; result[5] = '.'; result[14] = '@';
+        result[22] = '-'; result[25] = '.';
+        return result.join('');
+    }
 }
 
 function toggleAbstract(btn) {
@@ -27,7 +31,9 @@ function toggleAbstract(btn) {
     }
 }
 
-function copy(btn, text) {
+function copy(btn, key) {
+    var text = repair(key).split('').reverse().join('');
+
     navigator.clipboard.writeText(text).then(() => {
         btn.textContent = 'copied';
         setTimeout(() => {
@@ -35,3 +41,15 @@ function copy(btn, text) {
         }, 1000);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('office').textContent = repair('office');
+    document.getElementById('email').textContent = repair('email');
+
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            copy(this, this.dataset.copyType);
+        });
+    });
+
+});
