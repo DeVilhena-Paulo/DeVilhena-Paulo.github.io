@@ -106,10 +106,37 @@
     <!-- ------------------------------------------------------------------ -->
 
     <!-- ------------------------------------------------------------------ -->
+    <!-- Section - Interests -->
+    <section id="interests">
+        <div class="container vertical-spacing">
+        <h2>Interests</h2>
+
+        <p>
+            I'm broadly interested in the design of programming languages
+            and tools to ensure the correctness of software (regardless
+            of who or what wrote it).
+            More specifically, I'm interested in the rigorous formulation of
+            concurrency and in the ability to formally reason about programs.
+            Using <strong>keywords</strong>, I would define my research
+            interests as
+              <strong>concurrency models</strong>,
+              <strong>separation logic</strong>,
+              <strong>verification</strong>,
+              <strong>formalisation of mathematics</strong>,
+              <strong>type systems</strong>,
+              <strong>effect handlers</strong>, and
+              <strong>functional programming</strong>.
+        </p>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
     <!-- Section - Publications -->
     <section id="publications"> <!-- style="background:#f6d57920"> -->
-        <div class="container vertical-spacing" style="padding-bottom:20px">
-        <h2 style="padding-top:15px">Publications</h2>
+        <div class="container vertical-spacing">
+        <h2>Publications</h2>
 
         <!-- -------------------------------------------------------------- -->
         <div class="publication">
@@ -120,7 +147,7 @@
             Undergoing peer review
             <br>
             Simcha Van Collem,
-            Paulo Emílio de Vilhena, and
+            <strong>Paulo Emílio de Vilhena</strong>, and
             Robbert Krebbers
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/exceptional.pdf" target="_blank"
@@ -158,7 +185,7 @@
             <br>
             Principles of Programming Languages (POPL), January 2026
             <br>
-            Paulo Emílio de Vilhena,
+            <strong>Paulo Emílio de Vilhena</strong>,
             Simcha Van Collem,
             Ines Wright, and
             Robbert Krebbers
@@ -209,7 +236,7 @@
             Object-Oriented Programming, Systems, Languages, and Applications
             (OOPSLA), October 2024
             <br>
-            Paulo Emílio de Vilhena,
+            <strong>Paulo Emílio de Vilhena</strong>,
             Ori Lahav,
             Viktor Vafeiadis, and
             Azalea Raad
@@ -251,7 +278,7 @@
             Logical Methods in Computer Science
             (LMCS), October 2023
             <br>
-            Paulo Emílio de Vilhena and
+            <strong>Paulo Emílio de Vilhena</strong> and
             François Pottier
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/verifying-rmad.pdf" target="_blank"
@@ -291,7 +318,7 @@
             <br>
             European Symposium on Programming (ESOP), April 2023
             <br>
-            Paulo Emílio de Vilhena and
+            <strong>Paulo Emílio de Vilhena</strong> and
             François Pottier
             <br>
             <span class="nomination">
@@ -329,7 +356,7 @@
             <br>
             PhD Thesis, Université Paris Cité, December 2022
             <br>
-            Paulo Emílio de Vilhena
+            <strong>Paulo Emílio de Vilhena</strong>
             <br>
             <span class="award">
                 Recipient of the thesis award from the
@@ -377,7 +404,7 @@
             <br>
             Principles of Programming Languages (POPL), January 2021
             <br>
-            Paulo Emílio de Vilhena and
+            <strong>Paulo Emílio de Vilhena</strong> and
             François Pottier
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
@@ -418,7 +445,7 @@
             <br>
             International Joint Conference on Automated Reasoning (IJCAR), June 2020
             <br>
-            Paulo Emílio de Vilhena and
+            <strong>Paulo Emílio de Vilhena</strong> and
             Lawrence C. Paulson
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/algebraic-closure.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
@@ -447,7 +474,7 @@
             <br>
             Principles of Programming Languages (POPL), January 2020
             <br>
-            Paulo Emílio de Vilhena,
+            <strong>Paulo Emílio de Vilhena</strong>,
             François Pottier, and
             Jacques-Henri Jourdan
             <br>
@@ -473,6 +500,74 @@
             </div>
         </div>
         <!-- -------------------------------------------------------------- -->
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - Service -->
+    <section id="service">
+        <div class="container vertical-spacing">
+        <h2>Service</h2>
+
+        <p>
+            I've been invited to apply my expertise to evaluate
+            and select academic papers
+            for several major conferences.
+        </p>
+        <p>
+            <strong>Program committee (PC):</strong>
+            POPL 2026,
+            ESOP 2026, and
+            VSTTE 2024
+        <br>
+            <strong>External reviewer:</strong>
+            OOPSLA 2025, MFPS 2024, LICS 2024, FoSSaCS 2023, and ICFP 2021
+        </p>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - Activities -->
+    <section id="contact">
+        <div class="container vertical-spacing">
+        <h2>Activities</h2>
+
+        <p>
+            I'm one of the organisers of the
+            <a href ="https://lapras-imperial.github.io/" target="_blank" rel="noopener noreferrer">
+              LaPRaS seminar</a>,
+            a space for students and researchers at Imperial College London
+            to exchange ideas.
+        </p>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Section - Contact -->
+    <section id="contact">
+        <div class="container vertical-spacing">
+        <h2>Contact</h2>
+
+        <p>
+            <strong>Location:</strong>
+              <span id="address"></span>
+              <script>document.getElementById('address').textContent = address;</script>
+              [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, address)">copy</span> ]
+
+        <br>
+            <strong>Email:</strong>
+            <span id="email" class="eml"></span>
+            <script>document.getElementById('email').textContent = reveal(lst);</script>
+            [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, reveal(lst).split('').reverse().join(''))">copy</span> ]
+
+        </p>
 
         </div>
     </section>
