@@ -62,7 +62,7 @@
 
         <!-- Profile picture. -->
         <div id="profile-picture">
-            <img width="275px" src="img/picture.png" alt="Profile Picture">
+            <img width="285px" src="img/picture.png" alt="Profile Picture">
         </div>
 
         <!-- Greetings. -->
@@ -78,7 +78,7 @@
             working as a member of
             <a href="https://www.soundandcomplete.org/" aria-label="Azalea" target="_blank" rel="noopener noreferrer">Azalea
                 Raad</a>'s
-            research group,
+            group,
             <a href="https://www.soundandcomplete.org/veritas.html" aria-label="Veritas group" target="_blank"
                 rel="noopener noreferrer">Veritas</a>.
         </p>
@@ -112,12 +112,14 @@
         <h2>Interests</h2>
 
         <p>
-            I'm broadly interested in the design of programming languages
+            I'm broadly interested in designing programming languages
             and tools to ensure the correctness of software (regardless
             of who or what wrote it).
             More specifically, I'm interested in the rigorous formulation of
             concurrency and in the ability to formally reason about programs.
-            Using <strong>keywords</strong>, I would define my research
+        </p>
+        <p>
+            In <strong>keywords</strong>, I define my research
             interests as
               <strong>concurrency models</strong>,
               <strong>separation logic</strong>,
@@ -512,19 +514,26 @@
         <h2>Service</h2>
 
         <p>
-            I've been invited to apply my expertise to evaluate
-            and select academic papers
-            for several major conferences.
+            I've been invited to apply my expertise to review papers
+            for the following conferences.
         </p>
-        <p>
-            <strong>Program committee (PC):</strong>
-            POPL 2026,
-            ESOP 2026, and
-            VSTTE 2024
-        <br>
-            <strong>External reviewer:</strong>
-            OOPSLA 2025, MFPS 2024, LICS 2024, FoSSaCS 2023, and ICFP 2021
-        </p>
+        <ul>
+            <li>
+                <strong>Program committee:</strong>
+                <a href="https://conf.researchr.org/home/POPL-2026" target="_blank" rel="noopener noreferrer">POPL '26</a>,
+                <a href="https://etaps.org/2026/conferences/esop/" target="_blank" rel="noopener noreferrer">ESOP '26</a>, and
+                <a href="https://www.soundandcomplete.org/vstte2024.html" target="_blank" rel="noopener noreferrer">VSTTE '24</a>
+            </li>
+
+            <li>
+                <strong>External reviewer:</strong>
+                <a href="https://2025.splashcon.org/" target="_blank" rel="noopener noreferrer">OOPSLA '25</a>,
+                <a href="https://oxford24.github.io/mfps_cfp.html" target="_blank" rel="noopener noreferrer">MFPS '24</a>,
+                <a href="https://lics.siglog.org/lics24/" target="_blank" rel="noopener noreferrer">LICS '24</a>,
+                <a href="https://etaps.org/2023/conferences/" target="_blank" rel="noopener noreferrer">FoSSaCS '23</a>, and
+                <a href="https://icfp21.sigplan.org/" target="_blank" rel="noopener noreferrer">ICFP '21</a>
+            </li>
+        </ul>
 
         </div>
     </section>
@@ -541,7 +550,7 @@
             <a href ="https://lapras-imperial.github.io/" target="_blank" rel="noopener noreferrer">
               LaPRaS seminar</a>,
             a space for students and researchers at Imperial College London
-            to exchange ideas.
+            to expose and exchange ideas.
         </p>
 
         </div>
@@ -554,21 +563,20 @@
     <section id="contact">
         <div class="container vertical-spacing">
         <h2>Contact</h2>
-
-        <p>
-            <strong>Location:</strong>
-              <span id="address"></span>
-              <script>document.getElementById('address').textContent = address;</script>
-              [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, address)">copy</span> ]
-
-        <br>
-            <strong>Email:</strong>
-            <span id="email" class="eml"></span>
-            <script>document.getElementById('email').textContent = reveal(lst);</script>
-            [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, reveal(lst).split('').reverse().join(''))">copy</span> ]
-
-        </p>
-
+        <ul>
+            <li>
+                <strong>Office:</strong>
+                <span id="office"></span>
+                <script>document.getElementById('office').textContent = office;</script>
+                [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, office)">copy</span> ]
+            </li>
+            <li>
+                <strong>Email:</strong>
+                <span id="email" class="eml"></span>
+                <script>document.getElementById('email').textContent = reveal(email);</script>
+                [ <span id="copyBtn" class="abstract-btn" onclick="copy(this, reveal(email).split('').reverse().join(''))">copy</span> ]
+            </li>
+        </ul>
         </div>
     </section>
     <!-- ------------------------------------------------------------------ -->

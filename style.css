@@ -239,12 +239,12 @@ a:active {
 
 /* Rounded corners and border.*/
 #profile-picture > img {
-    border-radius: 10px;
-    border: /*line-width:*/0px /*line-style:*/solid /*color:*/#5b6767;
+    border-radius: 5px;
+    border: /*line-width:*/1px /*line-style:*/solid /*color:*/#000000;
     box-shadow:
         /*offset-x*/0px
         /*offset-y*/0px
-        /*shadow-radius:*/6px
+        /*shadow-radius:*/10px
         /*spread-radius:*/-1px
         /*color:*/#5b6767;
 }

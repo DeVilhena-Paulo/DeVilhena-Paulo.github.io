@@ -1,8 +1,8 @@
-const address = "180 Queen's Gate, South Kensington, London SW7 2AZ";
-const lst = ['k', 'uu', 'cak', 'lai', 're', 'pmisan', 'ehli', 'vaedep'];
+const office = "180 Queen's Gate, South Kensington, London SW7 2AZ";
+const email = ['k', 'uu', 'cak', 'lai', 're', 'pmisan', 'ehli', 'vaedep'];
 
 function reveal(xs) {
-    xs = lst.join('').split('');
+    xs = xs.join('').split('');
     xs[2] = '.';
     xs[5] = '.';
     xs[14] = '@';
