@@ -43,7 +43,7 @@ function copy(btn, key) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('office').textContent = repair('office');
+    document.getElementById('office').textContent = repair('office').split('').reverse().join('');
     document.getElementById('email').textContent = repair('email');
 
     document.querySelectorAll('.copy-btn').forEach(btn => {
