@@ -35,7 +35,7 @@ function copy(btn, key) {
     var text = repair(key).split('').reverse().join('');
 
     navigator.clipboard.writeText(text).then(() => {
-        btn.textContent = 'copied';
+        btn.textContent = 'copied!';
         setTimeout(() => {
             btn.textContent = 'copy';
         }, 1000);
