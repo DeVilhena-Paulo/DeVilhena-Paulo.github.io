@@ -146,10 +146,11 @@ div.publication {
     .container {
         width: 94%;
     }
+
     /* Make profile picture smaller. */
     #profile-picture > img {
-        width: 150px;
-        margin-top: 4px;
+        width: 175px;
+        margin: /*top:*/8px /*right:*/-5px /*bottom:*/7px /*left:*/0;
     }
 }
 
@@ -241,6 +242,8 @@ a:active {
 #profile-picture > img {
     border-radius: 5px;
     border: /*line-width:*/1px /*line-style:*/solid /*color:*/#000000;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
     box-shadow:
         /*offset-x*/0px
         /*offset-y*/0px
@@ -270,7 +273,7 @@ footer {
     background: #f5f5f5;
     padding: 2rem 1rem;
     border-top: 2px solid black;
-    height: 70px;
+    height: 80px;
 }
 
 .footer-content {
@@ -300,6 +303,7 @@ img#paulo {
     display: flex;
     gap: 8px;
     align-items: center;
+    transform: translateY(-30%);
 }
 
 .social-icons svg {
@@ -311,8 +315,14 @@ img#paulo {
 }
 
 .social-icons svg:hover {
-  fill: #e8ba3a;
-  transform: scale(1.1);
+    fill: #e8ba3a;
+    transform: scale(1.1);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Change arrangement of icons depending screen size. */
@@ -333,6 +343,10 @@ img#paulo {
 
     img#kaeru {
         transform: translateY(-10%) rotate(-8deg);
+    }
+
+    .copyright {
+        padding: /*top:*/0 /*right:*/0  /*bottom:*/10px /*left:*/0;
     }
 
     .social-icons {
