@@ -150,7 +150,7 @@ div.publication {
     /* Make profile picture smaller. */
     #profile-picture > img {
         width: 175px;
-        margin: /*top:*/8px /*right:*/-5px /*bottom:*/7px /*left:*/0;
+        margin: /*top:*/10px /*right:*/-5px /*bottom:*/10px /*left:*/-4px;
     }
 }
 
