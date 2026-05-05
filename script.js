@@ -1,6 +1,6 @@
 const data = {
-    'office': ['ZA', '2 7', 'WS no', 'd', 'noL ,', 'not', 'gnisn', 'eK', ' ht', 'uo', 'S ,e', 'taG s\'n', 'e', 'euQ', ' 0', '81'],
-    'email': ['k', 'uu', 'cak', 'lai', 're', 'pmisan', 'ehli', 'vaedep'],
+    'office': ['HX', '7 2UG d', 'rof', 'dliuG ,', 'supma', 'C ytisr', 'evinU ,ll', 'iH gatS', ' ,', ')BB kcolB( gni', 'dliuB gni', 'ruT nalA ,30', 'BB12'],
+    'email': ['k', 'uu', 'cak', 'ye', 'rr', 'ussan', 'ehli', 'vedep'],
 };
 
 function repair(key) {
@@ -9,8 +9,8 @@ function repair(key) {
 	return result;
     } else {
         result = result.split('');
-        result[2] = '.'; result[5] = '.'; result[14] = '@';
-        result[22] = '-'; result[25] = '.';
+        result[22] = '.'; result[12] = '@';
+        result[5] = '.'; result[2] = '.';
         return result.join('');
     }
 }
