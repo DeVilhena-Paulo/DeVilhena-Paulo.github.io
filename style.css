@@ -180,6 +180,15 @@ a:active {
     text-decoration: none;
 }
 
+/* Special styling for co-authors' names. */
+a.author {
+    color: #000000;
+}
+
+a.author:hover {
+    color: #e8ba3a;
+}
+
 /* ------------------------------------------------------------------------- */
 
 

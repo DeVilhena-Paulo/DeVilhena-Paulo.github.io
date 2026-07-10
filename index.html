@@ -143,6 +143,43 @@
         <!-- -------------------------------------------------------------- -->
         <div class="publication">
             <span class="publication-title">
+                You Only Get One Shot: A Separation Logic for One-Shot Undelimited Continuations
+            </span>
+            <br>
+            Undergoing peer review
+            <br>
+            <strong>Paulo Emílio de Vilhena</strong> and
+            <a href="https://xavierleroy.org/"
+               target="_blank" rel="noopener noreferrer" class="author">Xavier Leroy</a>
+            <br>
+            [ <a href="https://devilhena-paulo.github.io/files/call1cc.pdf" target="_blank"
+                rel="noopener noreferrer">pdf</a>
+            ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+              Capturing the reasoning principles of undelimited continuations
+              in a separation logic has proven challenging: previous logics for call/cc
+              abandon either the <strong>frame rule</strong>, the core of separation logic,
+              or the <strong>bind rule</strong>, the key principle to verify programs by parts.
+              We show that by incorporating a <strong>one-shot</strong> restriction, namely
+              that the captured continuations can only be used once, both principles can be
+              recovered in a novel Iris-based separation logic for call/1cc and call/1cc0,
+              the constructs whose semantics incorporates this restriction.
+              The logic enjoys elegant, relatively simple, but yet powerful principles:
+              we show it is sufficient to conduct sophisticated case studies including
+              call/1cc0-based implementations of control inversion, cooperative concurrency,
+              and effect handlers similar to Filinski's encoding of shift/reset.
+              The latter case study further suggests a notion of
+              <strong>context-independent user-defined effects</strong>,
+              which implement a functionality regardless of the control stack.
+              Our results are formalized in Rocq using Iris.
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
+
+        <!-- -------------------------------------------------------------- -->
+        <div class="publication">
+            <span class="publication-title">
                 Principles of Callcc
             </span>
             <br>
@@ -174,9 +211,11 @@
             <br>
             Programming Language Design and Implementation (PLDI), June 2026
             <br>
-            Simcha van Collem,
+            <a href="https://simchavc.github.io/"
+               target="_blank" rel="noopener noreferrer" class="author">Simcha van Collem</a>,
             <strong>Paulo Emílio de Vilhena</strong>, and
-            Robbert Krebbers
+            <a href="https://robbertkrebbers.nl/"
+               target="_blank" rel="noopener noreferrer" class="author">Robbert Krebbers</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/exceptional.pdf" target="_blank"
                 rel="noopener noreferrer">pdf</a>
@@ -208,9 +247,11 @@
             Principles of Programming Languages (POPL), January 2026
             <br>
             <strong>Paulo Emílio de Vilhena</strong>,
-            Simcha van Collem,
+            <a href="https://simchavc.github.io/"
+               target="_blank" rel="noopener noreferrer" class="author">Simcha van Collem</a>,
             Ines Wright, and
-            Robbert Krebbers
+            <a href="https://robbertkrebbers.nl/"
+               target="_blank" rel="noopener noreferrer" class="author">Robbert Krebbers</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/blaze.pdf" target="_blank"
                 rel="noopener noreferrer">pdf</a>
@@ -261,9 +302,12 @@
             (OOPSLA), October 2024
             <br>
             <strong>Paulo Emílio de Vilhena</strong>,
-            Ori Lahav,
-            Viktor Vafeiadis, and
-            Azalea Raad
+            <a href="https://www.cs.tau.ac.il/~orilahav/"
+               target="_blank" rel="noopener noreferrer" class="author">Ori Lahav</a>,
+            <a href="https://people.mpi-sws.org/~viktor/"
+               target="_blank" rel="noopener noreferrer" class="author">Viktor Vafeiadis</a>, and
+            <a href="https://www.soundandcomplete.org/"
+               target="_blank" rel="noopener noreferrer" class="author">Azalea Raad</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/inline-x86-asm.pdf" target="_blank"
                 rel="noopener noreferrer">pdf</a>
@@ -303,7 +347,8 @@
             (LMCS), October 2023
             <br>
             <strong>Paulo Emílio de Vilhena</strong> and
-            François Pottier
+            <a href="https://pauillac.inria.fr/~fpottier/"
+               target="_blank" rel="noopener noreferrer" class="author">François Pottier</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/verifying-rmad.pdf" target="_blank"
                 rel="noopener noreferrer">pdf</a>
@@ -343,7 +388,8 @@
             European Symposium on Programming (ESOP), April 2023
             <br>
             <strong>Paulo Emílio de Vilhena</strong> and
-            François Pottier
+            <a href="https://pauillac.inria.fr/~fpottier/"
+               target="_blank" rel="noopener noreferrer" class="author">François Pottier</a>
             <br>
             <span class="nomination">
                 Nominated for one of the best-paper awards
@@ -429,7 +475,8 @@
             Principles of Programming Languages (POPL), January 2021
             <br>
             <strong>Paulo Emílio de Vilhena</strong> and
-            François Pottier
+            <a href="https://pauillac.inria.fr/~fpottier/"
+               target="_blank" rel="noopener noreferrer" class="author">François Pottier</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/separation-logic-effect-handlers.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.1145/3434314" target="_blank" rel="noopener noreferrer">doi</a>
@@ -470,7 +517,8 @@
             International Joint Conference on Automated Reasoning (IJCAR), June 2020
             <br>
             <strong>Paulo Emílio de Vilhena</strong> and
-            Lawrence C. Paulson
+            <a href="https://www.cl.cam.ac.uk/~lp15/"
+               target="_blank" rel="noopener noreferrer" class="author">Lawrence C. Paulson</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/algebraic-closure.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.1007/978-3-030-51054-1_12" target="_blank" rel="noopener noreferrer">doi</a>
@@ -499,8 +547,10 @@
             Principles of Programming Languages (POPL), January 2020
             <br>
             <strong>Paulo Emílio de Vilhena</strong>,
-            François Pottier, and
-            Jacques-Henri Jourdan
+            <a href="https://pauillac.inria.fr/~fpottier/"
+               target="_blank" rel="noopener noreferrer" class="author">François Pottier</a>, and
+            <a href="https://jhjourdan.mketjh.fr/"
+               target="_blank" rel="noopener noreferrer" class="author">Jacques-Henri Jourdan</a>
             <br>
             [ <a href="https://devilhena-paulo.github.io/files/spy-game.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
             | <a href="https://doi.org/10.1145/3371101" target="_blank" rel="noopener noreferrer">doi</a>
@@ -537,7 +587,12 @@
 
         <ul>
             <li>
+                <strong>Program chair:</strong>
+                <a href="https://ocaml.org/ocaml-workshop-2026" target="_blank" rel="noopener noreferrer">OCaml Workshop 2026</a>
+            </li>
+            <li>
                 <strong>Program committee:</strong>
+                OOPSLA '27,
                 <a href="https://conf.researchr.org/home/POPL-2026" target="_blank" rel="noopener noreferrer">POPL '26</a>,
                 <a href="https://etaps.org/2026/conferences/esop/" target="_blank" rel="noopener noreferrer">ESOP '26</a>,
                 <a href="https://www.soundandcomplete.org/vstte2024.html" target="_blank" rel="noopener noreferrer">VSTTE '24</a>
