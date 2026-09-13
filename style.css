@@ -88,14 +88,11 @@ header {
 header > div {
     margin: /*top:*/0em /*right:*/0 /*bottom:*/.5em /*left:*/0;
     padding-top: .5em;
-    border: /*line-width:*/ 1px /*line-style:*/ solid /*color:*/ black;
-    border-bottom: /*line-width:*/ 3px /*line-style:*/ solid /*color:*/ black;
-    border-left: /*line-width:*/ 2px /*line-style:*/ solid /*color:*/ black;
-    border-radius: 4px;
-    background-color: white;
+    border-bottom: /*line-width:*/ 2px /*line-style:*/ solid /*color:*/ black;
 }
+
 h1#title {
-    margin: /*top:*/.25em /*right:*/0 /*bottom:*/.25em /*left:*/.25em;
+    margin: /*top:*/.25em /*right:*/0 /*bottom:*/.25em /*left:*/0;
 }
 
 
@@ -149,8 +146,15 @@ div.publication {
 
     /* Make profile picture smaller. */
     #profile-picture > img {
-        width: 175px;
-        margin: /*top:*/10px /*right:*/-5px /*bottom:*/10px /*left:*/-4px;
+        width: 310px;
+        margin: /*top:*/5px /*right:*/0px /*bottom:*/10px /*left:*/0px;
+    }
+}
+
+/* Profile picture has variable length when screen size is smaller than 340px. */
+@media only screen and (max-width: 340px) {
+    #profile-picture > img {
+        width: 100%;
     }
 }
 
@@ -244,7 +248,7 @@ a.author:hover {
 /* Position and margin. */
 #profile-picture {
     float: left;
-    padding: /*top:*/10px /*right:*/25px /*bottom:*/0px /*left:*/4px;
+    padding: /*top:*/2px /*right:*/20px /*bottom:*/2px /*left:*/4px;
 }
 
 /* Rounded corners and border.*/

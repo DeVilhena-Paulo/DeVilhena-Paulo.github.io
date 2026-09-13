@@ -38,7 +38,7 @@
     <!-- ------------------------------------------------------------------ -->
     <!-- Top stripes. -->
     <div id="top-stripes" style="border-bottom:2px solid black;">
-        <div class="stripe" style="background-color: #f6d579; height:32px"></div>
+        <div class="stripe" style="background-color: #DCDCDC; height:32px"></div>
     </div>
     <!-- ------------------------------------------------------------------ -->
 
@@ -62,29 +62,19 @@
 
         <!-- Profile picture. -->
         <div id="profile-picture">
-            <img width="285px" src="img/picture.png" alt="Profile Picture">
+            <img width="350px" src="img/profile.jpg" alt="Profile Picture">
         </div>
 
-        <!-- Greetings. -->
         <h2>About me</h2>
 
-        <!-- Where I am. -->
         <p>
-            <!-- Greetings. -->
             Hi, welcome to my page!
             I'm a lecturer in cybersecurity at the
             <a href="https://www.surrey.ac.uk/surrey-centre-cyber-security" aria-label="Surrey Centre for Cyber Security" target="_blank" rel="noopener noreferrer">University of Surrey</a>.
             Before that, I was a postdoctoral researcher at
-            <a href="https://www.soundandcomplete.org/" aria-label="Azalea" target="_blank" rel="noopener noreferrer">Azalea Raad</a>'s
-            amazing research group,
-            <a href="https://www.soundandcomplete.org/veritas.html" aria-label="Veritas group" target="_blank"
-                rel="noopener noreferrer">Veritas</a>,
-            at
-            <a href="https://www.imperial.ac.uk/" aria-label="Imperial" target="_blank" rel="noopener noreferrer">Imperial College</a>.
-        </p>
-
-        <!-- Where I was. -->
-        <p>
+            <a href="https://www.imperial.ac.uk/" aria-label="Imperial" target="_blank" rel="noopener noreferrer">Imperial College London</a>
+            working with
+            <a href="https://www.soundandcomplete.org/" aria-label="Azalea" target="_blank" rel="noopener noreferrer">Azalea Raad</a>.
             I did my PhD at
             <a href="https://www.inria.fr/en/inria-paris-centre" target="_blank" rel="noopener noreferrer">Inria Paris</a>,
             in the
@@ -92,25 +82,7 @@
             team,
             under the supervision of
             <a href="https://pauillac.inria.fr/~fpottier/" target="_blank" rel="noopener noreferrer">François Pottier</a>.
-            The main contribution of my thesis is the extension of Separation Logic with
-            support for
-            <a href="https://ocaml.org/manual/effects.html" target="_blank" rel="noopener noreferrer">
-            effect handlers</a>,
-            an advanced control-flow mechanism that
-            was recently added to
-            <a href="https://ocaml.org/" target="_blank" rel="noopener noreferrer">OCaml</a>
-            (coincidentally, in the same day as my thesis defense!).
         </p>
-
-    </section>
-    <!-- ------------------------------------------------------------------ -->
-
-    <!-- ------------------------------------------------------------------ -->
-    <!-- Section - Interests -->
-    <section id="interests">
-        <div class="container vertical-spacing">
-        <h2>Interests</h2>
-
         <p>
             I'm interested in the design of programming languages
             and tools to ensure the correctness of software,
@@ -118,12 +90,11 @@
             and in the ability to formally reason about programs.
         </p>
         <p>
-            In <strong>keywords</strong>, I define my research
-            interests as
+            Keywords:
               <strong>cybersecurity</strong>,
-              <strong>concurrency models</strong>,
+              <strong>formal verification</strong>,
               <strong>separation logic</strong>,
-              <strong>verification</strong>,
+              <strong>concurrency models</strong>,
               <strong>formalisation of mathematics</strong>,
               <strong>type systems</strong>,
               <strong>effect handlers</strong>, and
@@ -139,6 +110,49 @@
     <section id="publications"> <!-- style="background:#f6d57920"> -->
         <div class="container vertical-spacing">
         <h2>Publications</h2>
+
+        <!-- -------------------------------------------------------------- -->
+        <div class="publication">
+            <span class="publication-title">
+                Lower Bounds of Comparison-Based Algorithms via Prophecy Variables
+            </span>
+            <br>
+            Undergoing peer review
+            <br>
+            <strong>Paulo Emílio de Vilhena</strong>
+            <br>
+            [ <a href="https://devilhena-paulo.github.io/files/lower-bounds.pdf" target="_blank"
+                rel="noopener noreferrer">pdf</a>
+            ]
+            [ <span class="abstract-btn" onclick="toggleAbstract(this)">abstract</span> ]
+            <div class="abstract">
+              We present a novel technique to formally verify lower bounds of
+              <strong>comparison-based algorithms</strong>.
+              Unlike previous work, where a comparison-based algorithm is modelled
+              as a <strong>decision tree</strong> that fixes the order in which
+              comparison queries are performed, we model an algorithm simply and
+              more generally as a piece of code written in an idealised functional
+              programming language with convenient features such as
+              mutable state, concurrency, and random sampling.
+              The key ingredient to enable this generalisation are
+              <strong>prophecy variables</strong>, which allow one
+              to refer to the trace of queries performed by the algorithm.
+              This enables a methodology whereby, to prove a
+              lower-bound statement for a given algorithm,
+              we show the existence of, and verify,
+              an <strong>adversary comparison function</strong>
+              that cautiously decides on the ordering of elements according
+              to the ongoing history of queries sent by the algorithm
+              so far to reveal the least information about this ordering
+              and force the algorithm to make as many comparison queries
+              as possible.
+              As case studies, we apply this methodology to verify
+              lower bounds of multiple comparison-based algorithms including
+              sorting and maximum-finding algorithms.
+              The proofs are mechanised in Rocq using Iris.
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
 
         <!-- -------------------------------------------------------------- -->
         <div class="publication">
@@ -593,7 +607,8 @@
             </li>
             <li>
                 <strong>Program committee:</strong>
-                OOPSLA '27,
+                <a href="https://pldi27.sigplan.org/" target="_blank" rel="noopener noreferrer">PLDI '27</a>,
+                <a href="https://2027.splashcon.org/track/splashoopsla2027" target="_blank" rel="noopener noreferrer">OOPSLA '27</a>,
                 <a href="https://conf.researchr.org/home/POPL-2026" target="_blank" rel="noopener noreferrer">POPL '26</a>,
                 <a href="https://etaps.org/2026/conferences/esop/" target="_blank" rel="noopener noreferrer">ESOP '26</a>,
                 <a href="https://www.soundandcomplete.org/vstte2024.html" target="_blank" rel="noopener noreferrer">VSTTE '24</a>
@@ -625,11 +640,10 @@
         <h2>Activities</h2>
 
         <p>
-            I'm one of the organisers of the
+            I was one of the organisers of
             <a href ="https://lapras-imperial.github.io/" target="_blank" rel="noopener noreferrer">
-              LaPRaS seminar</a>,
-            a space for students and researchers at Imperial College London
-            to expose and exchange ideas.
+              LaPRaS</a>,
+            a programming-languages seminar at Imperial College London.
         </p>
 
         </div>
